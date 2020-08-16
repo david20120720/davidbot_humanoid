@@ -32,9 +32,11 @@
 #define PIN_LED_2         54
 #define PIN_LED_3         55
 
-#define PIN_BUTTON_S1     56
+// #define PIN_BUTTON_S1     56
+#define PIN_BUTTON_S1     64
 #define PIN_BUTTON_S2     57
-#define PIN_BUTTON_S3     58
+// #define PIN_BUTTON_S3     58
+#define PIN_BUTTON_S3     66
 #define PIN_BUTTON_S4     59
 
 
