@@ -393,7 +393,8 @@ void dxl_hw_op3_voltage_update(void)
         }
         else
         {
-          if(battery_valtage_raw < voltage_ref)
+          // if(battery_valtage_raw < voltage_ref)
+          if(battery_valtage_raw < voltage_ref*0.92)
           {
             prev_state    = battery_state;
             battery_state = BATTERY_POWER_WARNNING;
@@ -436,7 +437,8 @@ void dxl_hw_op3_voltage_update(void)
     {
       process_time[2] = millis();
 
-      tone(BDPIN_BUZZER, 1000, 100);
+    //  tone(BDPIN_BUZZER, 1000, 100);
+     tone(BDPIN_BUZZER, 50, 100);
     }
   }
 }
